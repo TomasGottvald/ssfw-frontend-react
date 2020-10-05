@@ -12,11 +12,14 @@ function Header() {
     let headerCartCount = 0;
     let headerCartAmount = 0;
 
+
     if(inCartItems && inCartItems.length > 0 ) {
         headerCartCount = inCartItems.length
+
         inCartItems.map( function (item){
-            headerCartAmount += parseInt(item.priceWithVat) * parseInt(item.amount)
+            return headerCartAmount += parseInt(item.priceWithVat) * parseInt(item.amount)
         })
+
     }
 
     return (

@@ -57,7 +57,6 @@ const renderField = ({
 )
 
 const OrderDataForm = props => {
-    const { handleSubmit, pristine, reset, submitting } = props
     return (
         <div className="web__line">
             <div className="web__container">

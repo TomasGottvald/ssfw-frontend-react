@@ -235,15 +235,15 @@ function ProductDetail() {
                             </div>
                             <div className="in-tab js-responsive-tabs">
                                 <div className="in-tab__head dont-print">
-                                    <a href="#" className="in-tab__head__item js-tabs-button active" data-tab-id="description">
+                                    <a href="#product-info" className="in-tab__head__item js-tabs-button active" data-tab-id="description">
                                     Product information
                                     </a>
-                                    <a href="#" className="in-tab__head__item js-tabs-button" data-tab-id="accessories">
+                                    <a href="#accesories" className="in-tab__head__item js-tabs-button" data-tab-id="accessories">
                                     Accessories
                                     </a>
                                 </div>
                                 <div className="in-tab__content">
-                                    <a href="#" className="in-tab__content__title js-tabs-button active" data-tab-id="description">
+                                    <a href="#prouct-info" className="in-tab__content__title js-tabs-button active" data-tab-id="description">
                                     Product information
                                     <i className="svg svg-arrow"></i>
                                     </a>
@@ -299,7 +299,7 @@ function ProductDetail() {
                                             </table>
                                         </div>
                                     </div>
-                                    <a href="#" className="in-tab__content__title js-tabs-button" data-tab-id="accessories">
+                                    <a href="#accessories" className="in-tab__content__title js-tabs-button" data-tab-id="accessories">
                                         Accessories
                                         <i className="svg svg-arrow"></i>
                                     </a>
