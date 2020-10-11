@@ -1,7 +1,6 @@
 import loggedReducer from './isLogged'
 import loadingReducer from './isLoading'
 import addToCartReducer from './cart'
-import loadShippingReducer from './loadShipping'
 import setPaymentReducer from './setPayment'
 import setShippingReducer from './setShipping'
 
@@ -12,7 +11,6 @@ const allReducers = combineReducers({
     isLogged : loggedReducer,
     isLoading : loadingReducer,
     inCart: addToCartReducer,
-    loadShipping: loadShippingReducer,
     orderPayment: setPaymentReducer,
     orderShipping: setShippingReducer,
     form: formReducer

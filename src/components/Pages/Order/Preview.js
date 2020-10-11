@@ -15,7 +15,7 @@ function getVatFromWithVat(price, vat) {
 }
 
 function shippingLine( data ) {
-    if(data && data.id){
+    if(data && data.uuid){
         return (
             <tr className="table-cart-preview__row table-cart-preview__row--total table-cart-preview__row--important">
                 <td className="table-cart-preview__cell">
@@ -64,16 +64,16 @@ function OrderPreview() {
     let totalPrice = 0
 
     const previewItems = cartData.map(function(item){
-        totalPrice += Number(item.pricesWithVat) * Number(item.amount)
+        totalPrice += Number(item.priceWithVat) * Number(item.amount)
         return <PreviewItem key={item.id} data={item} />
     })
 
-    if(shippingData.id){
-        totalPrice += Number(shippingData.price)
+    if(shippingData.uuid){
+        totalPrice += Number(shippingData.price.priceWithVat)
     }
 
-    if(paymentData.id){
-        totalPrice += Number(paymentData.price)
+    if(paymentData.uuid){
+        totalPrice += Number(paymentData.price.priceWithVat)
     }
 
     return (

@@ -43,13 +43,6 @@ export const decreaseCount = ( id ) => {
 }
 
 // shipping
-export const loadShipping = ( data ) => {
-    return {
-        type: 'LOAD_SHIPPING',
-        payload: data
-    }
-}
-
 export const setShipping = ( item ) => {
     return {
         type: 'SET_SHIPPING',
