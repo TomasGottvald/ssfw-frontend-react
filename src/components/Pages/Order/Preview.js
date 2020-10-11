@@ -24,7 +24,7 @@ function shippingLine( data ) {
                 <td className="table-cart-preview__cell table-cart-preview__cell--price">
                     <IntlProvider locale={ CONFIG.LOCALE }>
                         <FormattedNumber
-                            value={ data.price }
+                            value={ data.price.priceWithVat }
                             style={`currency`}
                             currency={ CONFIG.CURRENCY }
                             />
@@ -36,7 +36,7 @@ function shippingLine( data ) {
 }
 
 function paymentLine(data) {
-    if(data && data.id){
+    if(data && data.uuid){
         return (
             <tr className="table-cart-preview__row table-cart-preview__row--total table-cart-preview__row--important">
                 <td className="table-cart-preview__cell">
@@ -45,7 +45,7 @@ function paymentLine(data) {
                 <td className="table-cart-preview__cell table-cart-preview__cell--price">
                     <IntlProvider locale={ CONFIG.LOCALE }>
                         <FormattedNumber
-                            value={ data.price }
+                            value={ data.price.priceWithVat }
                             style={`currency`}
                             currency={ CONFIG.CURRENCY }
                             />

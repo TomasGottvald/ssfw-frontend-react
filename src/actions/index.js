@@ -57,14 +57,7 @@ export const setShipping = ( item ) => {
     }
 }
 
-// transport
-export const loadPayments = ( data ) => {
-    return {
-        type: 'LOAD_PAYMENTS',
-        payload: data
-    }
-}
-
+// payment
 export const setPayment = ( item ) => {
     return {
         type: 'SET_PAYMENT',
