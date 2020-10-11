@@ -24,7 +24,7 @@ function shippingLine( data ) {
                 <td className="table-cart-preview__cell table-cart-preview__cell--price">
                     <IntlProvider locale={ CONFIG.LOCALE }>
                         <FormattedNumber
-                            value={ data.price .priceWithVat }
+                            value={ data.price.priceWithVat }
                             style={`currency`}
                             currency={ CONFIG.CURRENCY }
                             />
