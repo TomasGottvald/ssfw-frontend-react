@@ -57,8 +57,6 @@ function HomepageProductList () {
         if (loading) return <Loader />;
         if (error) return <p>Error :( {error.message}</p>;
 
-        console.log(data);
-
         return data.products.edges.map( function (item){
             return <ProductItem key={item.node.uuid} data={item} />
         });
